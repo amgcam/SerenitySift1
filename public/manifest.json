@@ -1,0 +1,43 @@
+{
+  "name": "Serenity Sift",
+  "short_name": "Serenity",
+  "description": "Track your emotional journey with AI-powered insights",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#2A0A3D",
+  "theme_color": "#00D4FF",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "scope": "/",
+  "prefer_related_applications": false,
+  "categories": ["health", "lifestyle", "medical"],
+  "shortcuts": [
+    {
+      "name": "Log Entry",
+      "short_name": "Log",
+      "description": "Create a new journal entry",
+      "url": "/log",
+      "icons": [{ "src": "/logo.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Chat",
+      "short_name": "Chat",
+      "description": "Chat with AI assistant",
+      "url": "/chat",
+      "icons": [{ "src": "/logo.png", "sizes": "192x192" }]
+    }
+  ]
+}
