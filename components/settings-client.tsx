@@ -191,6 +191,27 @@ export function SettingsClient({ user, profile }: { user: User; profile: Profile
               </Button>
             )}
           </CardContent>
+        </Card> 
+        <Card className="border-soft-cyan/20 bg-deep-purple/80 backdrop-blur-xl">
+          <CardHeader>
+            <CardTitle className="text-soft-cyan">Legal</CardTitle>
+          </CardHeader>
+          <CardContent className="space-y-3">
+            <a 
+              href="/legal/terms" 
+              target="_blank"
+              className="block text-soft-cyan hover:underline"
+            >
+              Terms of Service
+            </a>
+            <a 
+              href="/legal/privacy" 
+              target="_blank"
+              className="block text-soft-cyan hover:underline"
+            >
+              Privacy Policy
+            </a>
+          </CardContent>
         </Card>
       </motion.div>
 

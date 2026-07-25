@@ -256,6 +256,7 @@ export default function SignUpPage() {
                     </div>
                   )}
                   <Button
+                      
                     type="submit"
                     className="w-full bg-gradient-to-r from-soft-cyan to-soft-blue text-white hover:opacity-90 font-semibold shadow-soft-glow"
                     disabled={isLoading}
@@ -266,6 +267,34 @@ export default function SignUpPage() {
                         ? "Create Pro Account"
                         : "Sign Up"}
                   </Button>
+
+                  {/* Terms of Service Checkbox */}
+                  <div className="flex items-start gap-3 mt-4">
+                    <input 
+                      type="checkbox" 
+                      id="terms" 
+                      required 
+                      className="mt-1 accent-soft-cyan w-4 h-4" 
+                    />
+                    <label htmlFor="terms" className="text-sm text-soft-text leading-tight">
+                      I agree to the{" "}
+                      <a 
+                        href="/legal/terms" 
+                        target="_blank" 
+                        className="text-soft-cyan hover:underline"
+                      >
+                        Terms of Service
+                      </a>{" "}
+                      and{" "}
+                      <a 
+                        href="/legal/privacy" 
+                        target="_blank" 
+                        className="text-soft-cyan hover:underline"
+                      >
+                        Privacy Policy
+                      </a>
+                    </label>
+                  </div>
                 </div>
                 <div className="mt-4 text-center text-sm text-soft-text">
                   Already have an account?{" "}
